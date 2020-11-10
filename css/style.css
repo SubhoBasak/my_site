@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'Pacifico';
+	src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face {
+	font-family: 'FugazOne';
+	src: url('../fonts/FugazOne-Regular.ttf');
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+nav{
+	box-shadow: 2px 2px 5px 2px #dfdfdf;
+}
+
+.navbar{
+	animation-name: navbar-landing;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.navbar-brand{
+	display: inline-flex;
+	padding: 0;
+	height: 100%;
+	align-items: center;
+	width: 7rem;
+	justify-content: space-around;
+}
+.navbar-brand img{
+	width: 30%;
+	object-fit: scale-down;
+}
+.navbar-brand h1{
+	font-size: 1.5rem;
+	font-family: 'Pacifico';
+	margin: 0;
+	margin-right: 0;
+}
+.categories{
+	width: 100%;
+	display: flex;
+	overflow-x: scroll;
+	padding: 3px;
+}
+.categories button{
+	white-space: nowrap;
+	background: #fff;
+	margin-left: 5px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+.categories button:hover{
+	background: #dfdfdf;
+}
+.top-brands{
+	padding: 8px;
+	text-align: center;
+	font-family: 'Pacifico';
+}
+.card-img-top{
+	height: 200px;
+	object-fit: scale-down;
+}
+.card:hover{
+	transition: 0.5s;
+	box-shadow: 2px 2px 4px 2px gray;
+}
+.footer{
+	background: #dfdfdf;
+}
+.copyright-line{
+	background: #c0c0c0;
+	text-align: center;
+}
+.copyright-line span{
+	color: #666;
+}
+.shop-header img{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	object-fit: scale-down;
+}
+.shop-header h2{
+	font-family: 'Pacifico';
+}
+@keyframes navbar-landing{
+	from{
+		transform: translateY(-5rem);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
