@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Fontawesome JS -->
+    <script src="https://kit.fontawesome.com/6f976ece2d.js" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <!-- <img src="images/logo.png" /> -->
+        <h1>Bestnutrition</h1>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="show-all-products nav-link" href="all_products.html">All Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart
+              <span class="badge badge-pill badge-danger">5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#signin_modal" style="cursor: pointer;">
+              Login
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <div class="categories">
+      <button>Amla</button>
+      <button>Arjuna</button>
+      <button>Aswagandha</button>
+      <button>Bramhi</button>
+      <button>Curcumin</button>
+      <button>Garchinia</button>
+      <button>Glucosamine</button>
+      <button>Guduchi</button>
+      <button>Gymnema</button>
+      <button>Haritaki</button>
+      <button>Moringa</button>
+      <button>Neem</button>
+      <button>Senna</button>
+    </div>
+    <!-- navbar end -->
+
+    <!-- Modal -->
+      <div class="modal fade" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <form class="px-4 py-3">
+              <div class="form-group">
+                <label for="exampleDropdownFormEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleDropdownFormPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">New around here? <span class="text-primary">Sign up</span></a>
+            <a class="dropdown-item text-danger" href="#">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end -->
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 90%; margin: auto;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/product.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/product.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/product.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <img src="images/discount.png" style="position: absolute; top: 5px; left: 5px; width: 35%; object-fit: scale-down;">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
+             style="z-index: 0;">
+              <i class="fas fa-chevron-left" style="color: gray;
+              font-size: 22px;"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="z-index: 0;">
+              <i class="fas fa-chevron-right" style="color: gray;
+              font-size: 22px;"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 p-5">
+          <h2>Amla</h2>
+          <p style="color: #666;">Brahmi may be used as a brain tonic to support memory, learning and concentration. The herb is also a powerful rejuvenator that assists with mental activity brain functioning and overcoming feelings of nervousness or restlessness.</p>
+          <h5 style="color: #999; text-decoration: line-through;">Rs. 320</h5>
+          <h3 class="text-danger">Rs. 270/-
+            <span class="badge badge-pill badge-danger ml-5" style="font-size: 15px;">15% off</span>
+          </h3>
+          <p class="text-warning">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <dl class="row">
+            <dt class="col-sm-3">Ingredients</dt>
+            <dd class="col-sm-9">Arjuna Extract</dd>
+
+            <dt class="col-sm-3">Suggested Use</dt>
+            <dd class="col-sm-9">
+              <p>For adults take 1 capsules daily, or as recommended by your health care professional.</p>
+            </dd>
+
+            <dt class="col-sm-3">Packing</dt>
+            <dd class="col-sm-9">Bottle pack of 60 capsules of 500 mg each.</dd>
+
+            <dt class="col-sm-3 text-truncate">Reminder</dt>
+            <dd class="col-sm-9">Keep tightly closed in a cool dry place at a temperature 15°-30°C and out of the reach of the children.</dd>
+          </dl>
+          <form class="row mt-5" action="#" method="POST">
+            <button type="submit" class="btn btn-primary mr-1" data-toggle="tooltip" data-placement="top" title="Buy this product now. This will redirect you to the payment gateway.">Buy now</button>
+            <button type="submit" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Add this product to the cart. Later you can check out all the products saved on cart at once.">Add to cart</button>
+            <button type="submit" class="btn btn-info ml-1" data-toggle="tooltip" data-placement="top" title="This will redirect you to a query page. There you ask your query about this product">Ask question</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <div class="top-brands">
+          <h1>Related Products</h1>
+        </div>
+      <div id="fadein_id" class="row flex-row flex-nowrap" style="overflow-x: scroll;">
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="details.html" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div style="width: 15rem; margin: 10px;">
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top" src="images/product.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Product name</h5>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product for different problems -->
+      <div class="show-all-products all-products">
+        <div class="row all-products-container">
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 p-3">
+            <h6>Antioxidant</h6>
+            <ul>
+              <li><a href="#">Vitamin C</a></li>
+              <li><a href="#">CO Q10</a></li>
+              <li><a href="#">Amrit Chyavanprash</a></li>
+            <li><a href="#">Shilajit</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- end product for different problems -->
+
+    <!-- footer -->
+      <div class="container-fluid footer mt-5">
+        <div class="row p-3 pt-5">
+        	<div class="col-md-5 col-sm-12 address">
+        		<h5>Best Nutrition Products <span>Pvt. Ltd</span></h5>
+        		<p>Best Nutrition Product Inc., USA, founded by Dr. Kumar Pati in 1995, offers a wide selection of Natural Food Supplements, Ayurvedic and Chinese Herbal Supplements, Vitamins, Minerals, Sports Nutrition and Diet products.</p>
+        		<ul>
+        			<li>BEST NUTRITION PRODUCTS PVT LTD,<br>
+  					AL/1/A/1 STREET NO. 16,<br>
+  					NEW TOWN KOLKATA – 700156<br>
+  					WEST BENGAL, INDIA
+  				</li>
+  				<li>
+  					<i class="fas fa-phone-square"></i> +91 9830515307 (Support 11:00 AM - 07:00 PM)
+  				</li>
+  				<li>
+  					<i class="fas fa-envelope"></i> bnp@bestnutrition.in
+  				</li>
+  				<li>
+  					<i class="fas fa-envelope"></i> bestnutrition16@gmail.com
+  				</li>
+        		</ul>
+        	</div>
+          <div class="col-md-2 col-sm-12">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <ul>
+              <li class="m-1"><h4>News letter</h4></li>
+              <li><input class="form-control w-100" type="email" placeholder="Email" required /></li>
+              <li class="m-1"><button type="submit" class="btn btn-success">Submit</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright-line">
+          © Copyright 2020 by Subho Basak (<span>subhobasak50@gmail.com</span>)
+        </div>
+      </div>
+    <!-- footer end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#fadein_id').fadeIn
+      })
+      $('.carousel').carousel({interval: 2500})
+      $('.show-all-products').hover(function(){
+      	$('.all-products').css('display', 'flex')
+      },
+      function(){
+      	$('.all-products').css('display', 'none')
+      })
+    </script>
+  </body>
+</html>
