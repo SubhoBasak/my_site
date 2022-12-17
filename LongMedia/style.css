@@ -1,0 +1,22 @@
+/* icon animations */
+
+
+/* motion graphics */
+
+
+/* mouse effect */
+/* #mouse-effect{
+    position: absolute;
+    min-width: 84px;
+    min-height: 84px;
+    max-width: 84px;
+    max-height: 84px;
+    background: white;
+    mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 600px) {
+    #mouse-effect{
+        display: none;
+    }
+} */

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Media</title>
+
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <style>
+        #bg-icons{
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            height: 80vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #bg-icons i{
+            width: 24px;
+            height: 24px;
+            font-size: 24px;
+            opacity: 5%;
+            position: absolute;
+        }
+    </style>
+    <div id="bg-icons">
+        <i class="fa fa-camera"></i>
+        <i class="fa fa-video"></i>
+        <i class="fa fa-film"></i>
+        <i class="fa fa-compact-disc"></i>
+        <i class="fa fa-paintbrush"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-headphones"></i>
+        <i class="fa fa-camera"></i>
+        <i class="fa fa-video"></i>
+        <i class="fa fa-film"></i>
+        <i class="fa fa-compact-disc"></i>
+        <i class="fa fa-paintbrush"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-headphones"></i>
+        <i class="fa fa-camera"></i>
+        <i class="fa fa-video"></i>
+        <i class="fa fa-film"></i>
+        <i class="fa fa-compact-disc"></i>
+        <i class="fa fa-paintbrush"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-headphones"></i>
+    </div>
+
+    <style>
+        #p1{
+            animation-name: p1-anim;
+        }
+        #p2{
+            animation-name: p2-anim;
+        }
+        #p1,
+        #p2{
+            animation-fill-mode: forwards;
+            animation-duration: 2.3s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes p1-anim {
+            0%{
+                transform: translateX(-87.61px);
+                stroke-dasharray: 0 1000;
+                stroke-dashoffset: 0;
+            }
+            13.63%{
+                stroke-dasharray: 200 1000;
+            }
+            72.72%{
+                transform: translateX(0px);
+                stroke-dashoffset: -600;
+            }
+            100%{
+                stroke-dasharray: 200 1000;
+                stroke-dashoffset: -650;
+            }
+        }
+
+        @keyframes p2-anim{
+            0%{
+                opacity: 0%;
+                stroke-dasharray: 0 500;
+                stroke-dashoffset: 0;
+            }
+            45.45%{
+                opacity: 100%;
+                stroke-dasharray: 0 500;
+                stroke-dashoffset: 0;
+            }
+            72.27%{
+                stroke-dasharray: 200 500;
+            }
+            100%{
+                stroke-dasharray: 200 500;
+                stroke-dashoffset: -265;
+            }
+        }
+    </style>
+    <svg width="100%" height="80vh" viewBox="0 0 584 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_7_3)">
+            <rect width="584" height="258" fill="white"/>
+            <path id="p2" d="M458.21 89.8708C458.071 77.2472 449.537 52 416.513 52C383.489 52 375.233 77.2472 375.233 89.8708V206.997H327" stroke="url(#paint0_linear_7_3)" stroke-width="28" stroke-linejoin="round"/>
+            <path id="p1" d="M-34 207V89.8737C-33.722 77.3802 -24.9934 52.3152 7.69742 52.0029C40.3882 51.6905 48.8389 77.1199 48.9779 89.8737V167.958C49.1168 180.972 57.7343 207 91.0922 207C124.45 207 132.79 180.972 132.79 167.958V89.8737C132.929 77.2501 141.463 52.0029 174.487 52.0029C207.511 52.0029 215.768 77.2501 215.768 89.8737V207H305" stroke="url(#paint1_linear_7_3)" stroke-width="28" stroke-linejoin="miter"/>
+        </g>
+        <defs>
+        <linearGradient id="paint0_linear_7_3" x1="327" y1="129" x2="458" y2="129" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#413F3F"/>
+        <stop offset="1" stop-color="#ABAAA9"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_7_3" x1="-55" y1="129" x2="305" y2="129" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#302E2F"/>
+        <stop offset="0.34375" stop-color="#A5A3A1"/>
+        <stop offset="0.65625" stop-color="#716F6E"/>
+        <stop offset="1" stop-color="#363535"/>
+        </linearGradient>
+        <clipPath id="clip0_7_3">
+        <rect width="584" height="258" fill="white"/>
+        </clipPath>
+        </defs>
+    </svg>
+
+    <script src="https://kit.fontawesome.com/6f976ece2d.js" crossorigin="anonymous"></script>
+    <script>
+        const ww = window.innerWidth;
+        const hh = window.innerHeight;
+
+        const bgIcons = document.getElementsByClassName("fa");
+        // const mouseEffect = document.getElementById("mouse-effect");
+
+        for(let i = 0; i < bgIcons.length; i++){
+            bgIcons[i].style.top = Math.random() * 100 + '%';
+            bgIcons[i].style.left = Math.random() * 100 + '%';
+        }
+
+        document.onmousemove = (event) => {
+            // mouseEffect.style.top = event.clientY - 42 + 'px';
+            // mouseEffect.style.left = event.clientX - 42 + 'px';
+
+            for(let i = 0; i < bgIcons.length; i++){
+                bgIcons[i].style.transform = `translate(${event.clientX / ww * 100}px, ${event.clientY / hh * 100}px)`
+            }
+        }
+    </script>
+</body>
+</html>
