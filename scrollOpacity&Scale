@@ -1,0 +1,20 @@
+const anmSec = (s) => {
+  s = document.getElementById(s);
+  if (s.offsetTop > window.scrollY) {
+    s.style.opacity = 1;
+    s.style.transform = "scale(1)";
+  } else if (s.offsetTop + s.offsetHeight < scrollY) {
+    s.style.opacity = 0.5;
+    s.style.transform = "scale(0)";
+  } else {
+    let tmp = (s.offsetTop - window.scrollY) / s.offsetHeight + 1;
+    s.style.opacity = tmp;
+    s.style.transform = `scale(${tmp})`;
+  }
+};
+
+window.onscroll = () => {
+  anmSec("hero");
+  anmSec("hlight");
+  anmSec("feat");
+};
